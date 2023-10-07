@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>SignUp to ExpenseTracker</title>
+  </head>
+  <body>
+    <section id="signup-form">
+      <form onsubmit="signUp(event)" method="POST" id="signup-form">
+        <div class="txt_field">
+          <input type="text" name="username" required />
+          <span></span>
+          <label> Name</label>
+        </div>
+
+        <div class="txt_field">
+          <input type="email" name="emailId" required />
+          <span></span>
+          <label> EmailId</label>
+        </div>
+
+        <div class="txt_field">
+          <input type="password" name="password" />
+          <span></span>
+
+          <label> Password</label>
+        </div>
+
+        <button type="submit" id="submit">signup</button>
+
+        <div class="login_link">
+          Already a member? <a href="./login.html">Exisitng User Login</a>
+        </div>
+      </form>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
